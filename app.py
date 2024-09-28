@@ -1,7 +1,6 @@
 from flask import Flask, request
 import os
 import importlib
-import python-dotenv
 
 app = Flask(__name__)
 
