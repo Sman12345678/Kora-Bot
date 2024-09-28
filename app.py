@@ -1,8 +1,10 @@
 from flask import Flask, request
 import os
 import importlib
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+load_dotenv()
 
 # Verify the Facebook token (used during webhook setup)
 @app.route('/webhook', methods=['GET'])
@@ -49,3 +51,4 @@ def send_message(recipient_id, message_text):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000)
