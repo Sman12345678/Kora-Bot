@@ -50,5 +50,4 @@ def send_message(recipient_id, message_text):
     requests.post(url, json=payload, headers=headers)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    app.run(host='0.0.0.0',port=5000)
+     app.run(debug=True,host='0.0.0.0',port=5000)
