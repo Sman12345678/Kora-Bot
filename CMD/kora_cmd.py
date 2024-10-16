@@ -9,7 +9,7 @@ def handle_command(query):
     """Fetch a response from Kora AI based on the user query."""
     
     # URL for Kora AI with dynamic query input
-    Sman_Url = f"https://kora-ai.onrender.com/koraai?query={query}"
+    Sman_Url = f"https://kora-ai-sh1p.onrender.com/koraai?query={query}"
     
     # Send a GET request to Kora AI
     try:
