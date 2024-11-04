@@ -87,7 +87,7 @@ def send_message(recipient_id, message_text):
         "recipient": {"id": recipient_id},
         "message": {"text": message_text}
     }
-    response = requests.post("https://graph.facebook.com/v11.0/me/messages",
+    response = requests.post("https://graph.facebook.com/v21.0/me/messages",
                              params=params, headers=headers, json=data)
     if response.status_code != 200:
         print(f"Unable to send message: {response.text}")
