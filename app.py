@@ -93,4 +93,4 @@ def send_message(recipient_id, message_text):
         print(f"Unable to send message: {response.text}")
 
 if __name__ == '__main__':
-    app.run(port=int(os.getenv("PORT", 8080)))
+    app.run(debug=True,host='0.0.0.0',port=3000)
