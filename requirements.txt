@@ -1,5 +1,6 @@
 Flask
-requests
+fbchat
 python-dotenv
+requests
 flask-cors
 google-generativeai
